@@ -1,4 +1,4 @@
-# DeadFrame2D Template
+# <img src="https://github.com/Adamska-01/DeadFrame2D/blob/master/Shared/Resources/Logos/Window_Icon.png?raw=true" alt="DeadFrame2D" title="DeadFrame2D" width="32"/> DeadFrame2D Template
 
 This is a minimal template project using the [**DeadFrame2D**](https://github.com/Adamska-01/DeadFrame2D) engine as a submodule. It's intended as a clean starting point for new 2D game projects.
 
@@ -35,7 +35,7 @@ This will also update the submodules and add a git hook to ritrigger the setup w
 Use your IDE (Visual Studio, CLion, etc.) or run make/ninja depending on the generated files.
 
 ## 🧩 Dependencies
-- [DeadFrame2D]() Engine (as a submodule)
+- [DeadFrame2D](https://github.com/Adamska-01/DeadFrame2D) Engine (as a submodule)
   - [SDL2](https://github.com/libsdl-org/SDL) ([Image](https://github.com/libsdl-org/SDL_image), [Mixer](https://github.com/libsdl-org/SDL_mixer), [ttf](https://github.com/libsdl-org/SDL_ttf))
   - [Box2D](https://github.com/erincatto/box2d)
   - [TinyXML2](https://github.com/leethomason/tinyxml2)
