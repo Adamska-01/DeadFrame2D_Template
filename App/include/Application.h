@@ -5,7 +5,7 @@
 class Application : public Engine
 {
 public:
-	Application() = default;
+	Application();
 
 	virtual ~Application() = default;
 };
