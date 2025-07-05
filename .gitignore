@@ -10,6 +10,3 @@ Logs/
 *.sln
 *.log
 Makefile
-
-# Exclude
-!Vendor/Binaries
