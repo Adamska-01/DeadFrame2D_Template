@@ -65,10 +65,10 @@ project "App"
 			get_box2d_libdirs("../Core/Vendor/Box2D/Binaries/")))
 		postbuildcommands {
 			"mkdir -p %{cfg.targetdir}",
-			"cp -v ../Core/Vendor/SDL/SDL2-2.30.10/lib/Linux/x86/*.so %{cfg.targetdir}",
-			"cp -v ../Core/Vendor/SDL/SDL2_image-2.8.2/lib/Linux/x86/*.so %{cfg.targetdir}",
-			"cp -v ../Core/Vendor/SDL/SDL2_ttf-2.22.0/lib/Linux/x86/*.so %{cfg.targetdir}",
-			"cp -v ../Core/Vendor/SDL/SDL2_mixer-2.8.0/lib/Linux/x86/*.so %{cfg.targetdir}"
+			"cp -v ../Core/Vendor/SDL/SDL2-2.30.10/lib/Linux/x86/*.so0 %{cfg.targetdir}",
+			"cp -v ../Core/Vendor/SDL/SDL2_image-2.8.2/lib/Linux/x86/*.so0 %{cfg.targetdir}",
+			"cp -v ../Core/Vendor/SDL/SDL2_ttf-2.22.0/lib/Linux/x86/*.s0 %{cfg.targetdir}",
+			"cp -v ../Core/Vendor/SDL/SDL2_mixer-2.8.0/lib/Linux/x86/*.so0 %{cfg.targetdir}"
 		}
 
 	-- Linux x64
@@ -78,10 +78,10 @@ project "App"
 			get_box2d_libdirs("../Core/Vendor/Box2D/Binaries/")))
 		postbuildcommands {
 			"mkdir -p %{cfg.targetdir}",
-			"cp -v ../Core/Vendor/SDL/SDL2-2.30.10/lib/Linux/x64/*.so %{cfg.targetdir}",
-			"cp -v ../Core/Vendor/SDL/SDL2_image-2.8.2/lib/Linux/x64/*.so %{cfg.targetdir}",
-			"cp -v ../Core/Vendor/SDL/SDL2_ttf-2.22.0/lib/Linux/x64/*.so %{cfg.targetdir}",
-			"cp -v ../Core/Vendor/SDL/SDL2_mixer-2.8.0/lib/Linux/x64/*.so %{cfg.targetdir}"
+			"cp -v ../Core/Vendor/SDL/SDL2-2.30.10/lib/Linux/x64/*.so0 %{cfg.targetdir}",
+			"cp -v ../Core/Vendor/SDL/SDL2_image-2.8.2/lib/Linux/x64/*.so0 %{cfg.targetdir}",
+			"cp -v ../Core/Vendor/SDL/SDL2_ttf-2.22.0/lib/Linux/x64/*.so0 %{cfg.targetdir}",
+			"cp -v ../Core/Vendor/SDL/SDL2_mixer-2.8.0/lib/Linux/x64/*.so0 %{cfg.targetdir}"
 		}
 
 	-- Windows x86
