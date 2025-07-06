@@ -22,7 +22,7 @@ project "App"
 		"../Core/Shared/include",
 		"../Core/2DGameEngine/include",
 		"../Core/Vendor/nlohmann-3.11.3", 
-        "../Core/Vendor/Box2D/include",
+		"../Core/Vendor/Box2D/include",
 		"../Core/Vendor/tinyxml2-10.0.0", 
 		-- There are a lot of useful sdl structs/classes that the app could use
 		"../Core/Vendor/SDL/SDL2-2.30.10/include",
@@ -57,7 +57,8 @@ project "App"
 	-- Linux
 	filter "system:linux"
 		links { "SDL2", "SDL2_image", "SDL2_ttf", "SDL2_mixer", "Box2D" }
-
+		linkoptions { '-Wl,-rpath,\\$$ORIGIN' }
+		
 	-- Linux x86
 	filter { "system:linux", "platforms:x86" }
 		libdirs(table.join(
