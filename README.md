@@ -29,7 +29,7 @@ Run the batch script to generate project files and set up the environment:
 | Windows  | `Scripts/Setup-Windows.bat` |
 | Linux    | `Scripts/Setup-Linux.sh`    |
 
-This will also update the submodules and add a git hook to ritrigger the setup when a branch is checked out.
+This will also update the submodules and add a git hook to retrigger the setup when a branch is checked out.
 
 ### 2. Build
 Use your IDE (Visual Studio, CLion, etc.) or run make/ninja depending on the generated files.
