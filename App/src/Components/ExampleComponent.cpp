@@ -1,7 +1,7 @@
 #include "Components/ExampleComponent.h"
-#include <Components/Transform.h>
-#include <GameObject.h>
-#include <Tools/Helpers/Guards.h>
+#include <Engine/Components/Transform.h>
+#include <Engine/Entity/GameObject.h>
+#include <Utilities/Debugging/Guards.h>
 
 
 ExampleComponent::ExampleComponent(float amplitude, float frequency, float rotationSpeed)

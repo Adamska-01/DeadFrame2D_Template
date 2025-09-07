@@ -1,17 +1,17 @@
 #include "Blueprints/ExampleBlueprint.h"
 #include "Scenes/ExampleScene.h"
-#include <Blueprints/UI/ButtonBlueprint.h>
-#include <Components/Rendering/ImageScroller.h>
-#include <Components/Transform.h>
-#include <Components/UI/Button.h>
-#include <Components/UI/Canvas.h>
-#include <Components/UI/Layout/VerticalLayoutGroup.h>
-#include <Components/UI/TextMesh.h>
 #include <Constants/CommonColors.h>
-#include <Management/SceneManager.h>
-#include <Math/Vector2.h>
-#include <SubSystems/Events/EventManager.h>
-#include <SubSystems/Renderer.h>
+#include <Core/CoreEvents/EventManager.h>
+#include <Core/Math/Vector2.h>
+#include <Core/SubSystems/Systems/Renderer.h>
+#include <Engine/Blueprints/UI/ButtonBlueprint.h>
+#include <Engine/Components/Rendering/ImageScroller.h>
+#include <Engine/Components/Transform.h>
+#include <Engine/Components/UI/Button.h>
+#include <Engine/Components/UI/Canvas.h>
+#include <Engine/Components/UI/Layout/VerticalLayoutGroup.h>
+#include <Engine/Components/UI/TextMesh.h>
+#include <Engine/SceneSystem/SceneManager.h>
 
 
 std::weak_ptr<ButtonBlueprint> ExampleScene::CreateButton(const std::string& text, const std::function<void()>& onPressedHandler, const std::function<void()>& onEnterHandler)

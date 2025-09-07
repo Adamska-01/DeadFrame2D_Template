@@ -1,8 +1,8 @@
 #include "Blueprints/ExampleBlueprint.h"
 #include "Components/ExampleComponent.h"
-#include <Components/Rendering/Sprite.h>
-#include <Components/Transform.h>
 #include <Constants/ResourcePaths.h>
+#include <Engine/Components/Rendering/Sprite.h>
+#include <Engine/Components/Transform.h>
 
 
 ExampleBlueprint::ExampleBlueprint(Vector2F startPos)
