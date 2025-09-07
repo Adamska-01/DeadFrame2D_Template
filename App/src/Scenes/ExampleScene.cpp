@@ -5,7 +5,7 @@
 #include <Core/Math/Vector2.h>
 #include <Core/SubSystems/Systems/Renderer.h>
 #include <Engine/Blueprints/UI/ButtonBlueprint.h>
-#include <Engine/Components/Rendering/ImageScroller.h>
+#include <Engine/Components/Rendering/Camera.h>
 #include <Engine/Components/Transform.h>
 #include <Engine/Components/UI/Button.h>
 #include <Engine/Components/UI/Canvas.h>
@@ -57,6 +57,10 @@ void ExampleScene::Enter()
 {
 	auto renderTargetSize = Renderer::GetResolutionTarget();
 
+	// Camera (without nothing will render!)
+	auto cameraObj = GameObject::Instantiate<GameObject>();
+	cameraObj.lock()->AddComponent<Camera>();
+
 	// Canvas
 	auto canvasObject = GameObject::Instantiate<GameObject>();
 	canvasObject.lock()->AddComponent<Canvas>();
@@ -89,7 +93,6 @@ void ExampleScene::Enter()
 
 	canvasObject.lock()->AddChildGameObject(layout);
 
-
 	// Blueprint
-	auto blueprintExample = GameObject::Instantiate<ExampleBlueprint>(Vector2F(renderTargetSize.x * 0.7f, renderTargetSize.y * 0.55f));
+	auto blueprintExample = GameObject::Instantiate<ExampleBlueprint>(Vector2F(renderTargetSize.x * 0.2f, renderTargetSize.y * 0.05f));
 }
