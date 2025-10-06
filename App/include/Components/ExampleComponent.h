@@ -3,15 +3,18 @@
 #include <Engine/Components/GameComponent.h>
 
 
-class Transform;
+namespace DeadFrame2D::Engine
+{
+	class Transform;
+}
 
 
-class ExampleComponent : public GameComponent
+class ExampleComponent : public DeadFrame2D::Engine::GameComponent
 {
 private:
-	Transform* transform;
+	DeadFrame2D::Engine::Transform* transform;
 
-	Vector2F initialPosition;
+	DeadFrame2D::Core::Vector2F initialPosition;
 
 	float timeAccumulator;
 

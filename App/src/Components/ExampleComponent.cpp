@@ -4,6 +4,12 @@
 #include <Utilities/Debugging/Guards.h>
 
 
+using namespace DeadFrame2D::Core;
+using namespace DeadFrame2D::Engine;
+using namespace DeadFrame2D::Utilities;
+using namespace DeadFrame2D::Constants;
+
+
 ExampleComponent::ExampleComponent(float amplitude, float frequency, float rotationSpeed)
 	: transform(nullptr),
 	initialPosition(Vector2F::Zero),
@@ -18,7 +24,7 @@ void ExampleComponent::Init()
 {
 	transform = OwningObject.lock()->GetComponent<Transform>();
 
-	Tools::Helpers::GuardAgainstNull(transform, "ExampleComponent::Init: Transform not found from ExampleComponent.");
+	GuardAgainstNull(transform, "ExampleComponent::Init: Transform not found from ExampleComponent.");
 }
 
 void ExampleComponent::Start()
@@ -33,7 +39,7 @@ void ExampleComponent::Update(float deltaTime)
 
 	transform->RotateByDegrees(rotationSpeed * deltaTime);
 
-	auto offset = std::sin(timeAccumulator * MathConstants::PI * frequency) * amplitude;
+	auto offset = std::sin(timeAccumulator * MathConstants::PI_f * frequency) * amplitude;
 
 	transform->SetWorldPosition(Vector2F(initialPosition.x + offset, initialPosition.y));
 }

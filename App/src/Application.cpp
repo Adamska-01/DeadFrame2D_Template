@@ -3,6 +3,10 @@
 #include <Core/SubSystems/Systems/Window.h>
 
 
+using namespace DeadFrame2D::Core;
+using namespace DeadFrame2D::Engine;
+
+
 Application::Application()
 {
 	Window::SetWindowTitle("Hello World!");

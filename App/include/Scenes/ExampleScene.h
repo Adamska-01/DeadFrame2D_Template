@@ -5,15 +5,18 @@
 #include <string>
 
 
-class ButtonBlueprint;
+namespace DeadFrame2D::Engine
+{
+	class ButtonBlueprint;
+}
 
 
-class ExampleScene : public Scene
+class ExampleScene : public DeadFrame2D::Engine::Scene
 {
 private:
-	std::weak_ptr<ButtonBlueprint> CreateButton(const std::string& text, const std::function<void()>& onPressedHandler, const std::function<void()>& onEnterHandler);
+	std::weak_ptr<DeadFrame2D::Engine::ButtonBlueprint> CreateButton(const std::string& text, const std::function<void()>& onPressedHandler, const std::function<void()>& onEnterHandler);
 
-	std::weak_ptr<GameObject> CreateText(const std::string& text);
+	std::weak_ptr<DeadFrame2D::Engine::GameObject> CreateText(const std::string& text);
 
 
 public:

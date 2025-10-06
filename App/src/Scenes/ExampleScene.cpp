@@ -14,6 +14,12 @@
 #include <Engine/SceneSystem/SceneManager.h>
 
 
+using namespace DeadFrame2D::Core;
+using namespace DeadFrame2D::Engine;
+using namespace DeadFrame2D::Data;
+using namespace DeadFrame2D::Constants;
+
+
 std::weak_ptr<ButtonBlueprint> ExampleScene::CreateButton(const std::string& text, const std::function<void()>& onPressedHandler, const std::function<void()>& onEnterHandler)
 {
 	ButtonBlueprintModel buttonConfiguration =

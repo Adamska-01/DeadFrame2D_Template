@@ -3,14 +3,14 @@
 #include <Engine/Entity/GameObject.h>
 
 
-class ExampleBlueprint : public GameObject
+class ExampleBlueprint : public DeadFrame2D::Engine::GameObject
 {
 private:
-	Vector2F startPos;
+	DeadFrame2D::Core::Vector2F startPos;
 
 
 public:
-	ExampleBlueprint(Vector2F startPos);
+	ExampleBlueprint(DeadFrame2D::Core::Vector2F startPos);
 
 
 	virtual void ConstructGameObject() override;
